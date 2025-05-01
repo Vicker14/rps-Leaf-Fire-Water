@@ -41,8 +41,14 @@ svg {
     padding: 1em 2em;
     align-self: center;
     margin: auto;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 a {
     text-decoration: none;
     color: inherit;
+}
+button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
 }
