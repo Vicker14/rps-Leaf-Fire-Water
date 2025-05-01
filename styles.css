@@ -1,0 +1,44 @@
+body {
+    background-color: #D4C9BE;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 500;
+}
+#main-body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 100px 30%;
+    background-color: #F1EFEC;
+    border-radius: 15px;
+    width: 40%;
+    max-height: 600px;
+    aspect-ratio: 9 / 16;
+
+    align-items: center;
+}
+#text {
+    font-size: 200%;
+    color:#44391E;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+.item {
+    fill: #44391E;
+}
+svg {
+    height: 100px;
+}
+#button-player {
+    background-color: #E1DFDC;
+    color: #44391E;
+    border: transparent;
+    border-radius: 1em;
+
+    font-size: larger;
+
+    padding: 1em 2em;
+    align-self: center;
+    margin: auto;
+}
