@@ -7,48 +7,67 @@ body {
     display: flex;
     flex-direction: column;
 
-    margin: 100px 30%;
-    background-color: #F1EFEC;
-    border-radius: 15px;
-    width: 40%;
-    max-height: 600px;
-    aspect-ratio: 9 / 16;
+    margin: 50px 5%; /* Adjusted margin for mobile responsiveness */
+    background-color: #F1EFEC; /* Background color for the main body */
+    border-radius: 15px; /* Rounded corners for the container */
+    width: 90%; /* Responsive width for mobile */
+    max-width: 600px; /* Maximum width for larger screens */
+    max-height: 600px; /* Maximum height to maintain aspect ratio */
+    aspect-ratio: 9 / 16; /* Maintain a 9:16 aspect ratio */
 
-    align-items: center;
+    align-items: center; /* Center align items within the container */
 }
 #text {
-    font-size: 200%;
-    color:#44391E;
+    font-size: 200%; /* Font size for text, responsive for mobile */
+    color: #44391E; /* Text color */
 }
 .icons {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Flexbox layout for icons */
+    flex-direction: row; /* Arrange icons in a row */
 }
 .item {
-    fill: #44391E;
+    fill: #44391E; /* Fill color for SVG items */
 }
 svg {
-    height: 100px;
+    height: 100px; /* Default height for SVGs */
 }
 #button-player {
-    background-color: #E1DFDC;
-    color: #44391E;
-    border: transparent;
-    border-radius: 1em;
+    background-color: #E1DFDC; /* Button background color */
+    color: #44391E; /* Button text color */
+    border: transparent; /* Remove border */
+    border-radius: 1em; /* Rounded corners for the button */
 
-    font-size: larger;
+    font-size: larger; /* Font size for button text */
 
-    padding: 1em 2em;
-    align-self: center;
-    margin: auto;
+    padding: 1em 2em; /* Padding for the button */
+    align-self: center; /* Center align the button */
+    margin: auto; /* Center the button horizontally */
 
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
 }
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
 }
 button:hover {
-    transform: scale(1.05); /* Slightly enlarge the button */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Media query for larger screens (desktop) */
+@media (min-width: 768px) {
+    #main-body {
+        margin: 100px 30%; /* Adjusted margin for desktop */
+        width: 40%; /* Reduced width for desktop */
+    }
+    #text {
+        font-size: 250%; /* Larger font size for desktop */
+    }
+    svg {
+        height: 120px; /* Larger SVG height for desktop */
+    }
+    #button-player {
+        font-size: x-large; /* Larger font size for button text on desktop */
+        padding: 1.2em 2.5em; /* Increased padding for desktop */
+    }
 }
